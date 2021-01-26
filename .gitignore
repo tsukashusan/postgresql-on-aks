@@ -2,6 +2,6 @@
 *.lock.hcl
 *.tfstate
 *.tfplan
-*.tfplan.lock.info
+*.lock.info
 *.plan
 *.backup
