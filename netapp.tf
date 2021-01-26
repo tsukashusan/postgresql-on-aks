@@ -48,7 +48,7 @@ resource "azurerm_netapp_volume" "example" {
   export_policy_rule {
       rule_index = 1
       allowed_clients = azurerm_subnet.k8sdefaultnodesubnet.address_prefixes
-      nfsv4_enabled = true
+      protocols_enabled = ["NFSv4.1"]
       unix_read_only    = false
       unix_read_write   = true
   }
