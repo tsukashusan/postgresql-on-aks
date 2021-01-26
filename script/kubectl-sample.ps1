@@ -32,10 +32,10 @@ kubectl apply -f .\yaml\pv-nfs.yaml
 kubectl apply -f .\yaml\configmap.yaml
 kubectl apply -f .\yaml\postgresql-stateful.yaml
 
-#kubectl apply -f .\yaml\postgresql-stateful.yaml
+#kubectl apply -f .\yaml\postgresql-service.yaml
 
 
-kubectl get pod postgresql-nfs -o wide
+kubectl get pod postgresql-nfs-0 -o wide
 kubectl describe pod postgres-statefulset-0
 kubectl logs postgres-statefulset-0
 kubectl exec --stdin --tty postgres-statefulset-0 -- /bin/bash
