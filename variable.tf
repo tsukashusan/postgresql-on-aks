@@ -52,14 +52,7 @@ variable "aksnodepoolnodecount" {
     type    = string
     default = "1"
 }
-variable "client_id" {
-    type    = string
-    default = "_clientid_"
-}
-variable "client_secret" {
-    type = string
-    default = "_clientsecret_"
-}
+
 variable "ssh_public_key" {
     type = string
     default = "_publickey_"
